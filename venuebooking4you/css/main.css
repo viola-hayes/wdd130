@@ -18,7 +18,7 @@
     --nav-link-color: #F9F6FF;
     --nav-background-color: #AE82FF;
     --nav-hover-link-color: white;
-    --nav-hover-background-color: #490059 ;
+    --nav-hover-background-color: white;
   }
 img {
     width:100%;
@@ -90,4 +90,30 @@ footer {
     height: 140px;
     color: var(--accent2-color);
     padding-top: 15px;
+}
+.site-plan-link {
+    color:white;
+}
+.contentfaq {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    color:white;
+}
+.guyjamming {
+    grid-column:1/3;
+    grid-row:1/3;
+    padding-left:90px;
+    padding-top:70px;
+
+}
+.faqinfo {
+    grid-column: 2/4;
+    grid-row:2/4;
+    background-color: #00000080;
+    color:white;
+    font-size: large;
+    padding:50px;
+    line-height: 1.4em;
+    height:fit-content;
 }
