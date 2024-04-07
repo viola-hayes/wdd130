@@ -121,3 +121,30 @@ footer {
     line-height: 1.4em;
     height:fit-content;
 }
+.whyuscontent {
+    display: grid;
+    grid-template-columns: 1fr 30px 1fr;
+    color:#AE82FF;
+    
+}
+.firsthalf {
+    grid-column: 1/2;
+    padding-left:20px;
+}
+.secondhalf {
+    grid-column: 3/4;
+    padding-right:20px;
+}
+.guystrumming {
+    width: 100%;
+    height:300px;
+    object-fit: cover;
+}
+.attentions {
+    color:#F9F6FF;
+    padding-left:30px;
+}
+.attention {
+    color:#F9F6FF;
+    padding-left: 30px;
+}
