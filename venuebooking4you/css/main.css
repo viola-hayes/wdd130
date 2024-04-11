@@ -72,7 +72,9 @@ nav a:hover {
     background-color: var(--nav-hover-background-color);
     color:var(--nav-hover-link-color);
 }
-
+strong {
+    color:white;
+}
 main.home {
     display: grid;
     gap: 20px;
@@ -130,10 +132,12 @@ footer {
 .firsthalf {
     grid-column: 1/2;
     padding-left:20px;
+    line-height: 1.6em;
 }
 .secondhalf {
     grid-column: 3/4;
     padding-right:20px;
+    line-height: 1.6em;
 }
 .guystrumming {
     width: 100%;
@@ -147,4 +151,45 @@ footer {
 .attention {
     color:#F9F6FF;
     padding-left: 30px;
+}
+@media screen and (max-width: 900px) {
+    body {
+        /* background-color: orange; */
+    }
+    main.home {
+        grid-template-columns: 1fr;
+        text-align: left;
+    }
+    .guyjamming {
+        padding-left:0;
+        grid-column: 1/-1;
+    }
+    .faqinfo {
+        grid-column: 1/-1;
+    }
+  }
+@media screen and (max-width: 550px) {
+body {
+    /* background-color: green; */
+}
+    h3 {
+        padding-right: 30px;
+    }
+
+    nav {
+        grid-template-columns: 1fr;
+        background-color: var(--paragraph-background-color);
+        min-height: 140px;
+    }
+    .firsthalf {
+        grid-column: 1/-1;
+    }
+    .secondhalf {
+        grid-column: 1/-1;
+    }
+    .firsthalf, .secondhalf {
+        padding-right:30px;
+        padding-left:30px;
+    }
+
 }
